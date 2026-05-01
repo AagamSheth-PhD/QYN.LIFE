@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>qyn.life — Women's Luxury Streetwear</title>
+<meta name="description" content="qyn.life — Minimalist luxury streetwear for women. Explore curated collections of dresses, co-ords, knitwear and more.">
+<meta property="og:title" content="qyn.life — Women's Luxury Streetwear">
+<meta property="og:description" content="Dressed in intention. Explore the SS26 collection.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="https://picsum.photos/1920/900?random=1">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"qyn.life","url":"https://qyn.life","description":"Women's luxury streetwear brand"}
+</script>
+</head>
+<body>
+<!-- GRAIN OVERLAY -->
+<svg style="display:none">
+  <filter id="grain-filter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+</svg>
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- PROGRESS BAR -->
+<div id="progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="nav" id="nav">
+<div class="nav__inner">
+  <a href="/" class="nav__logo" aria-label="qyn.life Home">QYN<span class="dot">.LIFE</span></a>
+  <nav class="nav__links" aria-label="Main navigation">
+    <div class="nav__item" data-mega="new">
+      <a href="#" class="nav__link">New Arrivals</a>
+    </div>
+    <div class="nav__item" data-mega="dresses">
+      <a href="#" class="nav__link">Dresses</a>
+    </div>
+    <div class="nav__item" data-mega="tops">
+      <a href="#" class="nav__link">Tops</a>
+    </div>
+    <div class="nav__item" data-mega="knitwear">
+      <a href="#" class="nav__link">Knitwear</a>
+    </div>
+    <div class="nav__item" data-mega="coords">
+      <a href="#" class="nav__link">Co-ords</a>
+    </div>
+    <div class="nav__item" data-mega="outerwear">
+      <a href="#" class="nav__link">Outerwear</a>
+    </div>
+    <a href="#" class="nav__link">Sale</a>
+    <a href="#" class="nav__link">Explore</a>
+  </nav>
+  <div class="nav__icons">
+    <button class="nav__icon" id="searchBtn" aria-label="Search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    </button>
+    <button class="nav__icon" id="wishlistBtn" aria-label="Wishlist">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span class="badge" id="wishBadge">0</span>
+    </button>
+    <button class="nav__icon" id="accountBtn" aria-label="Account">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <button class="nav__icon" id="cartBtn" aria-label="Cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="badge" id="cartBadge">0</span>
+    </button>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+<!-- MEGA MENUS -->
+<div class="mega" id="mega-dresses" role="region" aria-label="Dresses menu">
+  <div class="mega__inner">
+    <div class="mega__col">
+      <h4>Dresses</h4>
+      <a href="#">All Dresses</a><a href="#">Maxi Dresses</a><a href="#">Mini Dresses</a><a href="#">Midi Dresses</a><a href="#">Wrap Dresses</a><a href="#">Slip Dresses</a>
+    </div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=20" alt="Dress collection editorial"><span>The Edit</span></div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=21" alt="New season dresses"><span>New Season</span></div>
+  </div>
+</div>
+<div class="mega" id="mega-tops" role="region" aria-label="Tops menu">
+  <div class="mega__inner">
+    <div class="mega__col">
+      <h4>Tops</h4>
+      <a href="#">All Tops</a><a href="#">T-Shirts</a><a href="#">Blouses</a><a href="#">Bodysuits</a><a href="#">Crop Tops</a><a href="#">Shirts</a>
+    </div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=22" alt="Tops collection"><span>Essentials</span></div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=23" alt="Summer tops"><span>Summer Edit</span></div>
+  </div>
+</div>
+<div class="mega" id="mega-knitwear" role="region" aria-label="Knitwear menu">
+  <div class="mega__inner">
+    <div class="mega__col">
+      <h4>Knitwear</h4>
+      <a href="#">All Knitwear</a><a href="#">Cardigans</a><a href="#">Jumpers</a><a href="#">Knit Vests</a><a href="#">Knit Sets</a>
+    </div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=24" alt="Knitwear editorial"><span>Soft Edit</span></div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=25" alt="Knit collection"><span>Cozy Layers</span></div>
+  </div>
+</div>
+<div class="mega" id="mega-coords" role="region" aria-label="Co-ords menu">
+  <div class="mega__inner">
+    <div class="mega__col">
+      <h4>Co-ords</h4>
+      <a href="#">All Co-ords</a><a href="#">Linen Sets</a><a href="#">Knit Sets</a><a href="#">Lounge Sets</a><a href="#">Tailored Sets</a>
+    </div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=26" alt="Co-ord sets"><span>Matched</span></div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=27" alt="Set collection"><span>New In</span></div>
+  </div>
+</div>
+<div class="mega" id="mega-outerwear" role="region" aria-label="Outerwear menu">
+  <div class="mega__inner">
+    <div class="mega__col">
+      <h4>Outerwear</h4>
+      <a href="#">All Outerwear</a><a href="#">Blazers</a><a href="#">Trench Coats</a><a href="#">Jackets</a><a href="#">Shackets</a>
+    </div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=28" alt="Outerwear editorial"><span>Layer Up</span></div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=29" alt="Coat collection"><span>Overcoats</span></div>
+  </div>
+</div>
+<div class="mega" id="mega-new" role="region" aria-label="New Arrivals menu">
+  <div class="mega__inner">
+    <div class="mega__col">
+      <h4>New Arrivals</h4>
+      <a href="#">View All New</a><a href="#">New Dresses</a><a href="#">New Tops</a><a href="#">New Knitwear</a><a href="#">New Co-ords</a>
+    </div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=30" alt="New arrivals"><span>Just Landed</span></div>
+    <div class="mega__col mega__img"><img src="https://picsum.photos/400/250?random=31" alt="Latest drops"><span>The Drop</span></div>
+  </div>
+</div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="drawer-overlay" id="mobileOverlay"></div>
+<aside class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <div class="mobile-nav__item"><a href="#" data-expand>New Arrivals <span>+</span></a><div class="mobile-nav__sub"><a href="#">View All</a><a href="#">New Dresses</a><a href="#">New Tops</a></div></div>
+  <div class="mobile-nav__item"><a href="#" data-expand>Dresses <span>+</span></a><div class="mobile-nav__sub"><a href="#">All Dresses</a><a href="#">Maxis</a><a href="#">Minis</a><a href="#">Midis</a></div></div>
+  <div class="mobile-nav__item"><a href="#" data-expand>Tops <span>+</span></a><div class="mobile-nav__sub"><a href="#">All Tops</a><a href="#">T-Shirts</a><a href="#">Blouses</a></div></div>
+  <div class="mobile-nav__item"><a href="#" data-expand>Knitwear <span>+</span></a><div class="mobile-nav__sub"><a href="#">All Knitwear</a><a href="#">Cardigans</a><a href="#">Jumpers</a></div></div>
+  <div class="mobile-nav__item"><a href="#" data-expand>Co-ords <span>+</span></a><div class="mobile-nav__sub"><a href="#">All Co-ords</a><a href="#">Linen Sets</a></div></div>
+  <div class="mobile-nav__item"><a href="#" data-expand>Outerwear <span>+</span></a><div class="mobile-nav__sub"><a href="#">All Outerwear</a><a href="#">Blazers</a></div></div>
+  <div class="mobile-nav__item"><a href="#">Sale</a></div>
+  <div class="mobile-nav__item"><a href="#">Explore</a></div>
+</aside>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__img">
+    <picture>
+      <source media="(min-width:769px)" srcset="https://picsum.photos/1920/900?random=1">
+      <img src="https://picsum.photos/768/1024?random=1" alt="VEYRA SS26 Collection — woman in editorial luxury streetwear" loading="eager">
+    </picture>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content reveal">
+    <p class="hero__eyebrow">SS26 Collection</p>
+    <h1 class="hero__title">Dressed in Intention</h1>
+    <p class="hero__sub">Where quiet confidence meets bold silhouette</p>
+    <a href="#products" class="btn btn--white">Discover</a>
+  </div>
+  <div class="hero__scroll" id="scrollIndicator" aria-label="Scroll to explore">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ===== SPLIT SECTIONS ===== -->
+<section class="split reveal" id="categories">
+  <a href="#" class="split__panel">
+    <img src="https://picsum.photos/960/800?random=2" alt="Effortless casual collection" loading="lazy">
+    <div class="split__text">
+      <h2>Effortless</h2>
+      <span class="ul-anim">Shop Collection</span>
+    </div>
+  </a>
+  <a href="#" class="split__panel">
+    <img src="https://picsum.photos/960/800?random=3" alt="Statement occasion collection" loading="lazy">
+    <div class="split__text">
+      <h2>Statement</h2>
+      <span class="ul-anim">Shop Collection</span>
+    </div>
+  </a>
+</section>
+
+<!-- ===== LIFESTYLE ===== -->
+<section class="lifestyle reveal" id="lifestyle">
+  <div class="lifestyle__img">
+    <img src="https://picsum.photos/1200/800?random=4" alt="Editorial lifestyle — woman in co-ords set" loading="lazy">
+  </div>
+  <div class="lifestyle__content">
+    <span class="label">Co-ords</span>
+    <h2>Made to Match</h2>
+    <p>Effortlessly coordinated sets designed for the woman who curates her world with intention. From linen to knit — every pairing feels considered, never contrived.</p>
+    <a href="#" class="ul-anim">Explore →</a>
+  </div>
+</section>
+
+<!-- ===== CAMPAIGN ===== -->
+<section class="campaign reveal" id="campaign">
+  <div class="campaign__inner">
+    <div class="campaign__header">
+      <span class="label">Campaign</span>
+      <h2 style="color:#fff">Chapter One — Spring Summer 2026</h2>
+    </div>
+    <div class="campaign__grid">
+      <div class="campaign__video" id="vid1">
+        <img src="https://picsum.photos/800/450?random=40" alt="Campaign video 1 poster" loading="lazy">
+        <div class="play-btn" aria-label="Play video">
+          <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+      </div>
+      <div class="campaign__video" id="vid2">
+        <img src="https://picsum.photos/800/450?random=41" alt="Campaign video 2 poster" loading="lazy">
+        <div class="play-btn" aria-label="Play video">
+          <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="campaign__footer">
+      <a href="#" class="btn btn--white">Discover the Campaign</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHAPTERS / STORE LOCATOR ===== -->
+<section class="chapters reveal" id="chapters">
+  <div class="chapters__img">
+    <img src="https://picsum.photos/1920/700?random=5" alt="VEYRA store interior" loading="lazy">
+  </div>
+  <div class="chapters__overlay"></div>
+  <div class="chapters__content">
+    <h2>Chapters</h2>
+    <p>Find a store near you</p>
+    <a href="#" class="btn btn--white">Explore Stores</a>
+  </div>
+</section>
+
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="products reveal" id="products">
+  <div class="products__inner">
+    <div class="products__header">
+      <h2>New Arrivals</h2>
+      <div class="products__arrows">
+        <button id="prevBtn" aria-label="Previous products"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <button id="nextBtn" aria-label="Next products"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="products__track" id="productsTrack">
+      <!-- Products injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== STYLE SWIPER ===== -->
+<section class="swiper-section reveal" id="styleSwiper">
+  <div class="swiper-section__inner">
+    <div class="swiper-section__header">
+      <span class="label">Style Session</span>
+      <h2>Find Your Edit</h2>
+      <p class="swiper-section__sub">Swipe right to save, left to skip — we'll curate your look.</p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="swiper-progress-wrap">
+      <div class="swiper-progress-bar" id="swiperProgress"></div>
+    </div>
+    <p class="swiper-progress-label" id="swiperLabel">10 / 10 remaining</p>
+
+    <!-- Card Stack -->
+    <div class="swiper-stack-wrap" id="swiperStackWrap">
+      <div class="swiper-stack" id="swiperStack"></div>
+
+      <!-- MATCH flash -->
+      <div class="swiper-match" id="swiperMatch" aria-live="polite">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Saved!
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="swiper-btns" id="swiperBtns">
+      <button class="swiper-btn swiper-btn--dislike" id="swiperDislike" aria-label="Skip">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <button class="swiper-btn swiper-btn--undo" id="swiperUndo" aria-label="Undo" disabled>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      </button>
+      <button class="swiper-btn swiper-btn--like" id="swiperLike" aria-label="Save">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+    </div>
+
+    <!-- Results Grid (hidden until done) -->
+    <div class="swiper-results" id="swiperResults" style="display:none">
+      <div class="swiper-results__header">
+        <span class="label">Curated for You</span>
+        <h2 class="swiper-results__title">Your Edit</h2>
+      </div>
+      <div class="swiper-results__grid" id="swiperResultsGrid"></div>
+      <button class="btn" id="swiperRestart" style="margin-top:2rem">Start New Session</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter reveal" id="newsletter">
+  <h2>Stay in the World of qyn.life</h2>
+  <p>Be the first to know about new drops, exclusive edits, and quiet luxuries.</p>
+  <form class="newsletter__form" id="nlForm">
+    <input type="email" placeholder="Your email address" required aria-label="Email address">
+    <button type="submit">Subscribe</button>
+  </form>
+  <p class="newsletter__msg" id="nlMsg">Thank you for subscribing ✦</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+<div class="footer__inner">
+  <div class="footer__grid">
+    <div class="footer__col footer__brand">
+      <a href="/" class="nav__logo" style="color:#fff;font-size:1.2rem;font-family:var(--display)">QYN<span class="dot">.LIFE</span></a>
+      <p>Minimalist luxury streetwear for women. Dressed in intention.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="#fff" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="#fff" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.08 2.46 7.58 5.97 9.1-.08-.72-.15-1.82.03-2.6l1.34-5.68s-.34-.68-.34-1.69c0-1.58.92-2.76 2.06-2.76.97 0 1.44.73 1.44 1.6 0 .98-.62 2.44-.94 3.8-.27 1.13.56 2.05 1.67 2.05 2 0 3.55-2.11 3.55-5.16 0-2.7-1.94-4.59-4.71-4.59-3.21 0-5.09 2.41-5.09 4.9 0 .97.37 2.01.84 2.57.09.11.1.21.08.32l-.31 1.28c-.05.21-.17.25-.38.15-1.4-.65-2.27-2.7-2.27-4.35 0-3.53 2.56-6.77 7.39-6.77 3.88 0 6.89 2.76 6.89 6.46 0 3.85-2.43 6.96-5.81 6.96-1.13 0-2.2-.59-2.57-1.29l-.7 2.66c-.25.98-.94 2.2-1.4 2.95.45.14.92.23 1.4.27.32.03.65.05.98.05 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="#fff"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Shop</h4>
+      <a href="#">New Arrivals</a><a href="#">Dresses</a><a href="#">Tops</a><a href="#">Knitwear</a><a href="#">Co-ords</a><a href="#">Sale</a>
+    </div>
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="#">About Us</a><a href="#">Chapters (Stores)</a><a href="#">Projects</a><a href="#">Archive</a><a href="#">Press</a>
+    </div>
+    <div class="footer__col">
+      <h4>Help</h4>
+      <a href="#">Shipping Policy</a><a href="#">Returns</a><a href="#">Size Guide</a><a href="#">Contact Us</a><a href="#">FAQ</a>
+    </div>
+    <div class="footer__col">
+      <h4>Join the Edit</h4>
+      <p style="font-size:.8rem;opacity:.5;margin-bottom:.8rem">Sign up for exclusive access and updates.</p>
+      <div class="footer__nl">
+        <input type="email" placeholder="Email address" aria-label="Footer email signup">
+        <button type="button">Go</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <span>© 2026 qyn.life. All rights reserved.</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <span style="margin-left:1.5rem">INR ₹</span>
+    </div>
+  </div>
+</div>
+</footer>
+
+<!-- ===== SEARCH OVERLAY ===== -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="search-overlay__close nav__icon" id="searchClose" aria-label="Close search">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="search-overlay__inner">
+    <label for="searchInput">Search</label>
+    <input type="text" id="searchInput" placeholder="What are you looking for?">
+    <div class="search-tags">
+      <a href="#">Dresses</a><a href="#">New Arrivals</a><a href="#">Co-ords</a><a href="#">Knitwear</a><a href="#">Sale</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CART DRAWER ===== -->
+<div class="drawer-overlay" id="cartOverlay"></div>
+<aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping bag">
+  <div class="drawer__head">
+    <h3>Your Bag (<span id="cartCount">0</span>)</h3>
+    <button class="drawer__close" id="cartClose" aria-label="Close cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="drawer__body" id="cartBody">
+    <p style="color:var(--text2);font-size:.85rem;text-align:center;margin-top:3rem">Your bag is empty</p>
+  </div>
+  <div class="drawer__footer" id="cartFooter" style="display:none">
+    <div class="subtotal"><span>Subtotal</span><span id="cartTotal">₹0</span></div>
+    <p class="tax-note">Taxes & shipping calculated at checkout</p>
+    <button class="btn btn--fill" style="width:100%">Checkout</button>
+    <a href="#" class="view-cart ul-anim">View Full Cart</a>
+  </div>
+</aside>
+
+<!-- ===== WISHLIST DRAWER ===== -->
+<div class="drawer-overlay" id="wishOverlay"></div>
+<aside class="drawer" id="wishDrawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+  <div class="drawer__head">
+    <h3>Wishlist (<span id="wishCount">0</span>)</h3>
+    <button class="drawer__close" id="wishClose" aria-label="Close wishlist"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="drawer__body" id="wishBody">
+    <p style="color:var(--text2);font-size:.85rem;text-align:center;margin-top:3rem">Your wishlist is empty</p>
+  </div>
+</aside>
+
+<!-- ===== ACCOUNT DRAWER ===== -->
+<div class="drawer-overlay" id="acctOverlay"></div>
+<aside class="drawer" id="acctDrawer" role="dialog" aria-modal="true" aria-label="Account">
+  <div class="drawer__head">
+    <h3>Account</h3>
+    <button class="drawer__close" id="acctClose" aria-label="Close account"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="drawer__body" style="text-align:center;padding-top:4rem">
+    <h2 style="margin-bottom:.5rem">Welcome</h2>
+    <p style="color:var(--text2);margin-bottom:2rem;font-size:.9rem">Sign in to access your account</p>
+    <button class="btn btn--fill" style="width:100%;margin-bottom:.8rem">Login</button>
+    <button class="btn" style="width:100%">Create Account</button>
+  </div>
+</aside>
+
+<script src="app.js" defer></script>
+</body>
+</html>
