@@ -600,6 +600,22 @@
       .footer-bottom-links a { color: rgba(255,255,255,0.2); transition: color var(--transition-fast); }
       .footer-bottom-links a:hover { color: rgba(255,255,255,0.5); }
       .footer-bottom-links a:not(:last-child)::after { content: ' · '; margin: 0 0.75rem; }
+      .footer-credit {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.65rem;
+        color: rgba(255,255,255,0.2);
+        letter-spacing: 0.05em;
+        font-weight: 300;
+      }
+      .footer-credit a {
+        color: rgba(255,255,255,0.4);
+        text-decoration: none;
+        transition: color var(--transition-fast);
+      }
+      .footer-credit a:hover {
+        color: rgba(255,255,255,0.7);
+      }
       
       /* 14. Overlays & Drawers */
       .drawer-backdrop {
@@ -979,6 +995,9 @@
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
             </div>
+        </div>
+        <div class="footer-credit">
+            Design and Developed by <a href="https://digitalorigami.in" target="_blank" rel="noopener noreferrer">digitalorigami.in</a>
         </div>
     </footer>
 
